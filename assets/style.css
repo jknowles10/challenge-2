@@ -2,44 +2,52 @@
   box-sizing: border-box;
 }
 
-.barlow-regular {
-  font-family: "Barlow", sans-serif;
+.major-mono-display-regular {
+  font-family: "Major Mono Display", monospace;
   font-weight: 400;
   font-style: normal;
 }
 
-.main-header {
-  color:#8F857D;
+img {
+  display: flex;
+  justify-content: center;
+  width: 100%; 
+  background: cover;
+
+}
+
+header {
   border:solid;
   border-left:none;
   border-right:none;
-  border-top: none;/
+  border-top: none;
   font-size:80px;
+  padding:20px;
+  display: inline-block;
 } 
 
-.body-header {
-  width:90%;
-  border:solid;
-  border-width: 0.1em;
-  border-radius: 5px;
-  margin-left:5%;
-  margin-right:5%;
-  padding-left:15px;
-  padding-right:15px;
-  position:relative;
-  margin-top:-15px;
-  background-color: #433633;
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: "Major Mono Display", sans-serif;
+    font-size: 20px;
 }
 
-body {
-  
-  background-color: #433633;
-  color: #F7F0F5;
-  border-color: #F7F0F5;
-  font-family: "Barlow", sans-serif;
+nav ul {
+list-style-type: none;
 }
+
+nav ul li {
+display: inline-block;
+float:right;
+margin-left: 25px;
+}
+
 header h1 {
   text-align: left;
+  font-size: 40px;
+  display: inline-block;
 }
 
 header h2 {
@@ -47,6 +55,11 @@ header h2 {
   margin-left:10%;
   margin-right:10%;
   font-size:22px;
+}
+
+body {
+  
+  font-family: "Major Mono Display", sans-serif;
 }
 
 h1 {
@@ -59,7 +72,8 @@ h2 {
  font-size:22px; 
 }
 
-section { display:flex;
+section { 
+display:flex;
 flex-flow: row wrap;
 justify-content: space-between;
 width:100%;
@@ -67,24 +81,17 @@ width:100%;
 
 div {
   flex: 1 0 30%;
-  text-align: left;
-  border: solid;
-  border-width: 0.10em;
-  margin-top: 30px;
-  margin-left:0.5%;
-  margin-right:0.5%;
   padding-left:15px;
   padding-right:15px;
-  background-image: linear-gradient(to top, #343548, #1c1813);
 }
 
 p {
-font-size:16px;
+font-size:20px;
+float: left;
 }
 
 
-div:hover,
-div:hover .cardheader {
+div:hover, {
   box-shadow: inset 0px 0px 0px 0px
   #b4b8fd, 0 0 15px
   #b4b8fd;
@@ -99,8 +106,8 @@ div:hover .cardheader {
       width:40%;
   }
   .main-header {
-      font-size:50px;
-      color:#5C5552;
+      font-size:80px;
+;
   }
   
 }
@@ -115,7 +122,7 @@ div:hover .cardheader {
   }
   .main-header {
       font-size:50px;
-      color:#5C5552;
+      
   }
 
 }
