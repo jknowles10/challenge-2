@@ -72,6 +72,12 @@ h2 {
  font-size:22px; 
 }
 
+section .web-portfolio {
+  width: 100%;
+  border-bottom:5px;
+
+}
+
 section { 
 display:flex;
 flex-flow: row wrap;
