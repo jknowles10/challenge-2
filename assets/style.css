@@ -72,9 +72,10 @@ h2 {
  font-size:22px; 
 }
 
-section .web-portfolio {
+.web-portfolio h1 {
   width: 100%;
   border-bottom:5px;
+  font-size: 60px;
 
 }
 
@@ -96,6 +97,13 @@ font-size:20px;
 float: left;
 }
 
+div {
+  flex-direction: row;
+  display:flex; 
+  width: 100%; 
+  flex-wrap: wrap;
+  justify-content:center;
+}
 
 div:hover, {
   box-shadow: inset 0px 0px 0px 0px
@@ -105,7 +113,7 @@ div:hover, {
 
 @media screen and (max-width: 992px) {
   div { 
-      flex-flow: column wrap;
+      flex-flow: row wrap;
       flex: 1 1 40%;
       margin-left:2%;
       margin-right:2%;
@@ -121,8 +129,9 @@ div:hover, {
 @media screen and (max-width: 768px) {
   
   div { 
-      flex-flow: column wrap;
-      flex: 1 1 100%;
+      flex-direction: column;
+      flex-wrap:wrap;
+      flex: 1 1 40%;
       margin-left:10%;
       margin-right:10%; 
   }
